@@ -12,8 +12,11 @@
 </head>
 <body>
 
-  <div id="chartBilheteria">Total apurado nas bilheterias para cada ano</div>
-  <div id="chartGenero">Total apurado por Gênero de filme</div>
+  <div><h1> Total apurado nas bilheterias para cada ano</h1>
+     <div id="chartBilheteria"></div>
+  </div>
+  <br></br>
+  <div id="chartGenero"><h1> Total apurado por Gênero de filme</h1></div>
 
   <script type="text/javascript">
         var barChartBilheteria = dc.barChart('#chartBilheteria');
@@ -44,23 +47,25 @@
           });
 
           barChartBilheteria
-            .width(500).height(200)
+            .width(700).height(300)
+            .margins({top: 10, right: 10, bottom: 50, left: 50})
             .dimension(dateDim)
             .x(d3.scale.ordinal())
             .xUnits(dc.units.ordinal)
             .barPadding(0.2)
             .group(orcamentoByYear)
-            .yAxisLabel(" ")
+            .yAxisLabel("Bilheteria")
             .xAxisLabel("Anos")
 
           barChartGenero
-            .width(500).height(200)
+            .width(700).height(300)
+            .margins({top: 10, right: 10, bottom: 50, left: 50})
             .dimension(generoDim)
             .x(d3.scale.ordinal())
             .xUnits(dc.units.ordinal)
             .barPadding(0.2)
             .group(generoGroup)
-            .yAxisLabel(" ")
+            .yAxisLabel("Bilheteria")
             .xAxisLabel("Gênero")
 
           dc.renderAll();
