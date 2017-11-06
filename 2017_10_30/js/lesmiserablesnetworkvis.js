@@ -110,7 +110,7 @@ function Network() {
     .append("circle").attr("class", "node").attr("cx", function(d) {
       return d.x;})
     .style("fill", function (d) {
-    	return 'black'; })
+    	return 'blue'; })
     .attr("cy", function(d) {
      	return d.y;})
     .attr("r", function(d) {
