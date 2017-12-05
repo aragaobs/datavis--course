@@ -16,28 +16,34 @@
      <div id="chartBugs_Projeto"></div>
   </div>
   <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br>
-  <div><h1>Quantidade de casos de teste por projeto</h1>
-     <div id="chartTC_Projeto"></div>
+  <div><h1>Quantidade de casos de teste X Quantidade de bugs por release</h1>
+     <div id="chartTC_Bug_Release"></div>
   </div>
 
 
   <script type="text/javascript">
         // Chart Bugs por release de um determinado projeto
         var barChartBugs_Projeto = dc.barChart('#chartBugs_Projeto');
-      //  var barChartTC_Projeto = dc.barChart('#chartTC_Projeto');
+        // Gráfico para quantidade de casos de teste por release
+      //var barChartTC_Projeto = dc.barChart('#chartTC_Projeto');
+        // Gráfico de linha para quantidade de casos de teste x bugs por release
+        var tcBugReleaseChart = dc.compositeChart('#chartTC_Bug_Release');
 
         d3.json("Data_Analysis.json", function(error, data) {
           // formatando nossos dados
           data.forEach(function(d) {
             d.Qnt_Bugs = +d.Qnt_Bugs;
+            d.Qnt_TC_Release = +d.Qnt_TC_Release;
         });
           //criando um crossfilter
           var facts = crossfilter(data);
 
+          //Dimensão para projetos
           var projectDim = facts.dimension(function(d){
                 return d.Project;
           });
 
+          //Retorna a soma de bugs por projeto
           var bugsByProjeto = projectDim.group().reduceSum(function(d){
                 return d.Qnt_Bugs;
           });
@@ -45,6 +51,20 @@
           //var tcByProjeto = projectDim.group().reduceSum(function(d){
           //      return d.Qnt_TC_SW;
           //});
+
+          //Dimensão para Release
+          var releaseDim = facts.dimension(function(d){
+                return d.Release;
+          });
+
+          var bugsByReleaseGroup = releaseDim.group().reduceSum(function(d){
+            return d.Qnt_Bugs;
+          });
+
+          var tcByReleaseGroup = releaseDim.group().reduceSum(function(d){
+            return d.Qnt_TC_Release;
+          });
+
 
           barChartBugs_Projeto
             .width(900).height(300)
@@ -68,6 +88,22 @@
               .yAxisLabel("Qnt Casos de Testes")
               .xAxisLabel("Projetos")
 */
+
+          tcBugReleaseChart.width(800)
+             .height(400)
+             .margins({top: 50, right: 50, bottom: 25, left: 40})
+             .dimension(releaseDim)
+             .x(d3.scale.linear([0,40]))
+             .renderHorizontalGridLines(true)
+             .legend(dc.legend().x(700).y(5).itemHeight(13).gap(5))
+             .brushOn(false)
+             .compose([
+                dc.lineChart(tcBugReleaseChart)
+                          .group(bugsByReleaseGroup, 'Bugs')
+                          .ordinalColors(['steelblue']),
+                dc.lineChart(tcBugReleaseChart)
+                          .group(tcByReleaseGroup, 'Casos de Teste')
+                          .ordinalColors(['darkorange'])]);
 
 
           dc.renderAll();
