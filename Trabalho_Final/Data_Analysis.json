@@ -8,7 +8,11 @@
     "Qnt_TC_SW": 1375,
     "Qnt_Bugs_Client": 4,
     "Tempo_Estimado": "39:00:00",
-    "Tempo_Real": "58:00:00"
+    "Tempo_Real": "58:00:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "Analista_4",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -19,7 +23,11 @@
     "Qnt_TC_SW": 1375,
     "Qnt_Bugs_Client": 9,
     "Tempo_Estimado": "37:50:00",
-    "Tempo_Real": "53:10:00"
+    "Tempo_Real": "53:10:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -30,7 +38,11 @@
     "Qnt_TC_SW": 1375,
     "Qnt_Bugs_Client": 3,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "Analista_4",
+    "Analista_div3": "Analista_5",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -41,7 +53,11 @@
     "Qnt_TC_SW": 1375,
     "Qnt_Bugs_Client": 6,
     "Tempo_Estimado": "14:00:00",
-    "Tempo_Real": "33:50:00"
+    "Tempo_Real": "33:50:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "Analista_6",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -52,7 +68,11 @@
     "Qnt_TC_SW": 1375,
     "Qnt_Bugs_Client": 70,
     "Tempo_Estimado": "25:00:00",
-    "Tempo_Real": "28:20:00"
+    "Tempo_Real": "28:20:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "Analista_2",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -63,7 +83,11 @@
     "Qnt_TC_SW": 372,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "54:15:00",
-    "Tempo_Real": "53:10:00"
+    "Tempo_Real": "53:10:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "Analista_2",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -74,7 +98,11 @@
     "Qnt_TC_SW": 547,
     "Qnt_Bugs_Client": 6,
     "Tempo_Estimado": "",
-    "Tempo_Real": "04:30:00"
+    "Tempo_Real": "04:30:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -85,7 +113,11 @@
     "Qnt_TC_SW": 547,
     "Qnt_Bugs_Client": 13,
     "Tempo_Estimado": "",
-    "Tempo_Real": "70:00:00"
+    "Tempo_Real": "70:00:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -96,7 +128,11 @@
     "Qnt_TC_SW": 547,
     "Qnt_Bugs_Client": 7,
     "Tempo_Estimado": "",
-    "Tempo_Real": "15:00:00"
+    "Tempo_Real": "15:00:00",
+    "Analista_div1": "Analista_6",
+    "Analista_div2": "Analista_1",
+    "Analista_div3": "Analista_3",
+    "Analista_div4": "Analista_5"
   },
   {
     "Client": "Client_1",
@@ -107,7 +143,11 @@
     "Qnt_TC_SW": 547,
     "Qnt_Bugs_Client": 5,
     "Tempo_Estimado": "",
-    "Tempo_Real": "28:50:00"
+    "Tempo_Real": "28:50:00",
+    "Analista_div1": "Analista_6",
+    "Analista_div2": "Analista_1",
+    "Analista_div3": "Analista_3",
+    "Analista_div4": "Analista_4"
   },
   {
     "Client": "Client_1",
@@ -118,7 +158,11 @@
     "Qnt_TC_SW": 547,
     "Qnt_Bugs_Client": 13,
     "Tempo_Estimado": "",
-    "Tempo_Real": "66:30:00"
+    "Tempo_Real": "66:30:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "Analista_6",
+    "Analista_div3": "Analista_3",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -129,7 +173,11 @@
     "Qnt_TC_SW": 547,
     "Qnt_Bugs_Client": 5,
     "Tempo_Estimado": "24:30:00",
-    "Tempo_Real": "74:10:00"
+    "Tempo_Real": "74:10:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -140,7 +188,11 @@
     "Qnt_TC_SW": 547,
     "Qnt_Bugs_Client": 2,
     "Tempo_Estimado": "77:00:00",
-    "Tempo_Real": "70:20:00"
+    "Tempo_Real": "70:20:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "Analista_2",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -151,7 +203,11 @@
     "Qnt_TC_SW": 298,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "Analista_6",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -162,7 +218,11 @@
     "Qnt_TC_SW": 298,
     "Qnt_Bugs_Client": 6,
     "Tempo_Estimado": "12:30:00",
-    "Tempo_Real": "19:30:00"
+    "Tempo_Real": "19:30:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -173,7 +233,11 @@
     "Qnt_TC_SW": 298,
     "Qnt_Bugs_Client": 2,
     "Tempo_Estimado": "05:00:00",
-    "Tempo_Real": "65:30:00"
+    "Tempo_Real": "65:30:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "Analista_3",
+    "Analista_div3": "Analista_6",
+    "Analista_div4": "Analista_5"
   },
   {
     "Client": "Client_1",
@@ -184,7 +248,11 @@
     "Qnt_TC_SW": 298,
     "Qnt_Bugs_Client": 10,
     "Tempo_Estimado": "",
-    "Tempo_Real": "60:30:00"
+    "Tempo_Real": "60:30:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "Analista_5",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_1",
@@ -195,7 +263,11 @@
     "Qnt_TC_SW": 298,
     "Qnt_Bugs_Client": 8,
     "Tempo_Estimado": "30:30:00",
-    "Tempo_Real": "30:00:00"
+    "Tempo_Real": "30:00:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -206,7 +278,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 3,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -217,7 +293,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -228,7 +308,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -239,7 +323,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -250,7 +338,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 4,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_5",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -261,7 +353,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 4,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -272,7 +368,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -283,7 +383,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 3,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -294,7 +398,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "48:30:00",
+    "Analista_div1": "Analista_5",
+    "Analista_div2": "Analista_4",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -305,7 +413,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -316,7 +428,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 3,
     "Tempo_Estimado": "16:00:00",
-    "Tempo_Real": "20:30:00"
+    "Tempo_Real": "20:30:00",
+    "Analista_div1": "Analista_2",
+    "Analista_div2": "Analista_4",
+    "Analista_div3": "Analista_3",
+    "Analista_div4": "Analista_5"
   },
   {
     "Client": "Client_2",
@@ -327,7 +443,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -338,7 +458,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "124:30:00",
-    "Tempo_Real": "172:00:00"
+    "Tempo_Real": "172:00:00",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "Analista_2",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -349,7 +473,11 @@
     "Qnt_TC_SW": 756,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "108:00:00",
-    "Tempo_Real": "140:45:00"
+    "Tempo_Real": "140:45:00",
+    "Analista_div1": "Analista_1",
+    "Analista_div2": "Analista_3",
+    "Analista_div3": "Analista_4",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -360,7 +488,11 @@
     "Qnt_TC_SW": 110,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "11:00:00",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -371,7 +503,11 @@
     "Qnt_TC_SW": 110,
     "Qnt_Bugs_Client": 2,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -382,7 +518,11 @@
     "Qnt_TC_SW": 110,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "13:00:00",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -393,7 +533,11 @@
     "Qnt_TC_SW": 110,
     "Qnt_Bugs_Client": 2,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "21:00:00",
+    "Analista_div1": "Analista_5",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -404,7 +548,11 @@
     "Qnt_TC_SW": 110,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -415,7 +563,11 @@
     "Qnt_TC_SW": 555,
     "Qnt_Bugs_Client": 5,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -426,7 +578,11 @@
     "Qnt_TC_SW": 555,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "94:00:00",
-    "Tempo_Real": "100:00:00"
+    "Tempo_Real": "100:00:00",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "Analista_3",
+    "Analista_div3": "Analista_1",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -437,7 +593,11 @@
     "Qnt_TC_SW": 555,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "82:00:00",
-    "Tempo_Real": "149:40:00"
+    "Tempo_Real": "149:40:00",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "Analista_5",
+    "Analista_div3": "Analista_2",
+    "Analista_div4": "Analista_1"
   },
   {
     "Client": "Client_2",
@@ -448,7 +608,11 @@
     "Qnt_TC_SW": 555,
     "Qnt_Bugs_Client": 4,
     "Tempo_Estimado": "24:00:00",
-    "Tempo_Real": "24:00:00"
+    "Tempo_Real": "24:00:00",
+    "Analista_div1": "Analista_2",
+    "Analista_div2": "Analista_4",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -459,7 +623,11 @@
     "Qnt_TC_SW": 555,
     "Qnt_Bugs_Client": 2,
     "Tempo_Estimado": "111:00:00",
-    "Tempo_Real": "88:00:00"
+    "Tempo_Real": "88:00:00",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "Analista_3",
+    "Analista_div3": "Analista_2",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -470,7 +638,11 @@
     "Qnt_TC_SW": 160,
     "Qnt_Bugs_Client": 2,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -481,7 +653,11 @@
     "Qnt_TC_SW": 160,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -492,7 +668,11 @@
     "Qnt_TC_SW": 160,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "04:00:00",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "Analista_3",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -503,7 +683,11 @@
     "Qnt_TC_SW": 160,
     "Qnt_Bugs_Client": 3,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_5",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -514,7 +698,11 @@
     "Qnt_TC_SW": 160,
     "Qnt_Bugs_Client": 25,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -524,8 +712,12 @@
     "Qnt_TC_Release": 79,
     "Qnt_TC_SW": 160,
     "Qnt_Bugs_Client": 0,
-    "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Estimado": "11:10:00",
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "Analista_5",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -536,7 +728,11 @@
     "Qnt_TC_SW": 160,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "Analista_5",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -547,7 +743,11 @@
     "Qnt_TC_SW": 160,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "24:10:00",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "Analista_5",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -558,7 +758,11 @@
     "Qnt_TC_SW": 160,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "34:00:00",
-    "Tempo_Real": "41:50:00"
+    "Tempo_Real": "41:50:00",
+    "Analista_div1": "Analista_5",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -569,7 +773,11 @@
     "Qnt_TC_SW": 55,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -580,7 +788,11 @@
     "Qnt_TC_SW": 55,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -591,7 +803,11 @@
     "Qnt_TC_SW": 55,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_5",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -602,7 +818,11 @@
     "Qnt_TC_SW": 61,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -613,7 +833,11 @@
     "Qnt_TC_SW": 61,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -624,7 +848,11 @@
     "Qnt_TC_SW": 61,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "24:40:00",
+    "Analista_div1": "Analista_5",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -635,7 +863,11 @@
     "Qnt_TC_SW": 62,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -646,7 +878,11 @@
     "Qnt_TC_SW": 62,
     "Qnt_Bugs_Client": 3,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "10:00:00",
+    "Analista_div1": "Analista_6",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -657,7 +893,11 @@
     "Qnt_TC_SW": 62,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "08:00:00",
+    "Analista_div1": "Analista_5",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -668,7 +908,11 @@
     "Qnt_TC_SW": 62,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_5",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -679,7 +923,11 @@
     "Qnt_TC_SW": 243,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "08:00:00",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -690,7 +938,11 @@
     "Qnt_TC_SW": 243,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "06:00:00",
+    "Analista_div1": "",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -701,7 +953,11 @@
     "Qnt_TC_SW": 243,
     "Qnt_Bugs_Client": 1,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_6",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -712,7 +968,11 @@
     "Qnt_TC_SW": 243,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "18:00:00",
+    "Analista_div1": "Analista_5",
+    "Analista_div2": "Analista_1",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -723,7 +983,11 @@
     "Qnt_TC_SW": 243,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "",
-    "Tempo_Real": ""
+    "Tempo_Real": "",
+    "Analista_div1": "Analista_5",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   },
   {
     "Client": "Client_2",
@@ -734,6 +998,10 @@
     "Qnt_TC_SW": 243,
     "Qnt_Bugs_Client": 0,
     "Tempo_Estimado": "39:00:00",
-    "Tempo_Real": "53:30:00"
+    "Tempo_Real": "53:30:00",
+    "Analista_div1": "Analista_4",
+    "Analista_div2": "",
+    "Analista_div3": "",
+    "Analista_div4": ""
   }
 ]
