@@ -23,6 +23,9 @@
      <div id="chartTC_Release"></div>
   </div>
 
+  <div><h1>Gráfico de barras com DRE</h1>
+     <div id="chartDRE_Project"></div>
+  </div>
 
   <script type="text/javascript">
         // Chart Bugs por release de um determinado projeto
@@ -31,6 +34,9 @@
         var barChartTC_Projeto = dc.barChart('#chartTC_Release');
         // Gráfico de linha para quantidade de casos de teste x bugs por release
         var tcBugReleaseChart = dc.compositeChart('#chartTC_Bug_Release');
+
+        // Gráfico de barras com DRE por projeto
+        var dreProjectChart = dc.barChart('#chartDRE_Project');
 
         d3.json("Data_Analysis.json", function(error, data) {
 
@@ -47,15 +53,6 @@
                 return d.Project;
           });
 
-          //Retorna a soma de bugs por projeto
-          var bugsByProjeto = projectDim.group().reduceSum(function(d){
-                return d.Qnt_Bugs;
-          });
-
-          //var tcByProjeto = projectDim.group().reduceSum(function(d){
-          //      return d.Qnt_TC_SW;
-          //});
-
           //Dimensão para Release
           var releaseDim = facts.dimension(function(d){
                 return d.Release;
@@ -66,12 +63,22 @@
                 return d.Release_Date;
           });
 
-          //Retorna qnt de bugs por data da release
+          //Retorna a soma de bugs por projeto
+          var bugsByProjeto = projectDim.group().reduceSum(function(d){
+                return d.Qnt_Bugs;
+          });
+
+          //Retorna DRE por projeto
+          var dreByProjectGroup = projectDim.group().reduceSum(function(d){
+            return (d.Qnt_Bugs/d.Qnt_Bugs_Client);
+          });
+
+          //Retorna qnt de bugs de dev por data da release
           var bugsByDateReleaseGroup = dateDim.group().reduceSum(function(d){
             return d.Qnt_Bugs;
           });
 
-          //Retorna qnt de bugs por data da release
+          //Retorna qnt de casos de teste por data da release
           var tcByDateReleaseGroup = dateDim.group().reduceSum(function(d){
             return d.Qnt_TC_Release;
           });
@@ -86,7 +93,7 @@
             return d.Qnt_TC_Release;
           });
 
-
+          //Gráfico de barras com Bugs por projeto
           barChartBugs_Projeto
             .width(900).height(300)
             .margins({top: 10, right: 10, bottom: 50, left: 50})
@@ -98,19 +105,21 @@
             .yAxisLabel("Qnt Bugs")
             .xAxisLabel("Projetos")
 
-             barChartTC_Projeto
-              .width(2000).height(300)
-              .margins({top: 10, right: 10, bottom: 50, left: 50})
-              .dimension(releaseDim)
-              .x(d3.scale.ordinal())
-              .xUnits(dc.units.ordinal)
-              .barPadding(0.2)
-              .group(tcByReleaseGroup)
-              .yAxisLabel("Qnt Casos de Testes")
-              .xAxisLabel("Releases")
+          //Gráfico de barras com Casos de teste por Release
+          barChartTC_Projeto
+            .width(2000).height(300)
+            .margins({top: 10, right: 10, bottom: 50, left: 50})
+            .dimension(releaseDim)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal)
+            .barPadding(0.2)
+            .group(tcByReleaseGroup)
+            .yAxisLabel("Qnt Casos de Testes")
+            .xAxisLabel("Releases")
 
           // Composite chart com a linha de TC x Bugs por release de todos os projetos
-          tcBugReleaseChart.width(1200)
+          tcBugReleaseChart
+             .width(1200)
              .height(400)
              .margins({top: 50, right: 50, bottom: 25, left: 40})
              .dimension(dateDim)
@@ -126,6 +135,18 @@
                 dc.lineChart(tcBugReleaseChart)
                           .group(tcByDateReleaseGroup, 'Casos de Teste')
                           .ordinalColors(['darkorange'])]);
+
+          //Gráfico de barras com DRE (Qnt de bugs encontrados pelo time de testes/ bugs total)
+          dreProjectChart
+            .width(900).height(300)
+            .margins({top: 10, right: 10, bottom: 50, left: 50})
+            .dimension(projectDim)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal)
+            .barPadding(0.2)
+            .group(dreByProjectGroup)
+            .yAxisLabel("DRE")
+            .xAxisLabel("Projetos")
 
 
           dc.renderAll();
