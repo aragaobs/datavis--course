@@ -67,8 +67,13 @@
           });
 
           //Retorna qnt de bugs por data da release
-          var bugsByReleaseGroup = dateDim.group().reduceSum(function(d){
+          var bugsByDateReleaseGroup = dateDim.group().reduceSum(function(d){
             return d.Qnt_Bugs;
+          });
+
+          //Retorna qnt de bugs por data da release
+          var tcByDateReleaseGroup = dateDim.group().reduceSum(function(d){
+            return d.Qnt_TC_Release;
           });
 
           //Retorna qnt de bugs por release
@@ -104,22 +109,22 @@
               .yAxisLabel("Qnt Casos de Testes")
               .xAxisLabel("Releases")
 
-
-          tcBugReleaseChart.width(2000)
+          // Composite chart com a linha de TC x Bugs por release de todos os projetos
+          tcBugReleaseChart.width(1200)
              .height(400)
              .margins({top: 50, right: 50, bottom: 25, left: 40})
              .dimension(dateDim)
              .x(d3.time.scale().domain([new Date(2017, 1, 01), new Date(2017, 12, 31)]))
              .xUnits(d3.time.days)
              .renderHorizontalGridLines(true)
-             .legend(dc.legend().x(700).y(5).itemHeight(13).gap(5))
+             .legend(dc.legend().x(1000).y(5).itemHeight(13).gap(5))
              .brushOn(false)
              .compose([
                 dc.lineChart(tcBugReleaseChart)
-                          .group(bugsByReleaseGroup, 'Bugs')
+                          .group(bugsByDateReleaseGroup, 'Bugs')
                           .ordinalColors(['steelblue']),
                 dc.lineChart(tcBugReleaseChart)
-                          .group(tcByReleaseGroup, 'Casos de Teste')
+                          .group(tcByDateReleaseGroup, 'Casos de Teste')
                           .ordinalColors(['darkorange'])]);
 
 
