@@ -19,22 +19,26 @@
   <div><h1>Quantidade de casos de teste X Quantidade de bugs por release</h1>
      <div id="chartTC_Bug_Release"></div>
   </div>
+  <div><h1>Quantidade de casos de teste por release</h1>
+     <div id="chartTC_Release"></div>
+  </div>
 
 
   <script type="text/javascript">
         // Chart Bugs por release de um determinado projeto
         var barChartBugs_Projeto = dc.barChart('#chartBugs_Projeto');
         // Gráfico para quantidade de casos de teste por release
-      //var barChartTC_Projeto = dc.barChart('#chartTC_Projeto');
+        var barChartTC_Projeto = dc.barChart('#chartTC_Release');
         // Gráfico de linha para quantidade de casos de teste x bugs por release
         var tcBugReleaseChart = dc.compositeChart('#chartTC_Bug_Release');
 
         d3.json("Data_Analysis.json", function(error, data) {
-          // formatando nossos dados
+
+          var dtgFormat = d3.time.format("%d/%m/%Y");
+
           data.forEach(function(d) {
-            d.Qnt_Bugs = +d.Qnt_Bugs;
-            d.Qnt_TC_Release = +d.Qnt_TC_Release;
-        });
+                d.Release_Date = dtgFormat.parse(d.Release_Date);
+          });
           //criando um crossfilter
           var facts = crossfilter(data);
 
@@ -57,10 +61,22 @@
                 return d.Release;
           });
 
+          //Dimensão para Data da Release
+          var dateDim = facts.dimension(function(d){
+                return d.Release_Date;
+          });
+
+          //Retorna qnt de bugs por data da release
+          var bugsByReleaseGroup = dateDim.group().reduceSum(function(d){
+            return d.Qnt_Bugs;
+          });
+
+          //Retorna qnt de bugs por release
           var bugsByReleaseGroup = releaseDim.group().reduceSum(function(d){
             return d.Qnt_Bugs;
           });
 
+          //Retorna qnt de casos de teste por release
           var tcByReleaseGroup = releaseDim.group().reduceSum(function(d){
             return d.Qnt_TC_Release;
           });
@@ -77,23 +93,24 @@
             .yAxisLabel("Qnt Bugs")
             .xAxisLabel("Projetos")
 
-        /*     barChartTC_Projeto
-              .width(900).height(300)
+             barChartTC_Projeto
+              .width(2000).height(300)
               .margins({top: 10, right: 10, bottom: 50, left: 50})
-              .dimension(projectDim)
+              .dimension(releaseDim)
               .x(d3.scale.ordinal())
               .xUnits(dc.units.ordinal)
               .barPadding(0.2)
-              .group(tcByProjeto)
+              .group(tcByReleaseGroup)
               .yAxisLabel("Qnt Casos de Testes")
-              .xAxisLabel("Projetos")
-*/
+              .xAxisLabel("Releases")
 
-          tcBugReleaseChart.width(800)
+
+          tcBugReleaseChart.width(2000)
              .height(400)
              .margins({top: 50, right: 50, bottom: 25, left: 40})
-             .dimension(releaseDim)
-             .x(d3.scale.linear([0,40]))
+             .dimension(dateDim)
+             .x(d3.time.scale().domain([new Date(2017, 1, 01), new Date(2017, 12, 31)]))
+             .xUnits(d3.time.days)
              .renderHorizontalGridLines(true)
              .legend(dc.legend().x(700).y(5).itemHeight(13).gap(5))
              .brushOn(false)
