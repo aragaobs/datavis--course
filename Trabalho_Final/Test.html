@@ -23,8 +23,12 @@
      <div id="chartTC_Release"></div>
   </div>
 
-  <div><h1>Gráfico de barras com DRE</h1>
+  <div><h1>Eficiência​ ​ da​ ​ remoção​ ​ de​ ​ defeitos​ ​ nos​ ​ projetos ​ testados</h1>
      <div id="chartDRE_Project"></div>
+  </div>
+
+  <div><h1>Eficiência​ ​ da​ ​ remoção​ ​ de​ ​ defeitos​ ​ nas​ ​ releases​ ​ testadas</h1>
+     <div id="chartDRE_Release"></div>
   </div>
 
   <div><h1>Horas Estimadas X Horas Reais</h1>
@@ -42,6 +46,9 @@
 
         // Gráfico de barras com DRE por projeto
         var dreProjectChart = dc.barChart('#chartDRE_Project');
+
+        // Gráfico de barras com DRE por release
+        var dreReleaseChart = dc.barChart('#chartDRE_Release');
 
         // Gráfico de horas estimadas x reais por release
         var compositeHorasReleaseChart = dc.compositeChart('#chartHoras_Release');
@@ -84,6 +91,11 @@
 
           //Retorna DRE por projeto
           var dreByProjectGroup = projectDim.group().reduceSum(function(d){
+            return (d.Qnt_Bugs/(d.Qnt_Bugs + d.Qnt_Bugs_Client));
+          });
+
+          //Retorna DRE por release
+          var dreByReleaseGroup = releaseDim.group().reduceSum(function(d){
             return (d.Qnt_Bugs/(d.Qnt_Bugs + d.Qnt_Bugs_Client));
           });
 
@@ -176,7 +188,7 @@
 
           //Gráfico de barras com DRE (Qnt de bugs encontrados pelo time de testes/ bugs total)
           dreProjectChart
-            .width(900).height(300)
+            .width(1200).height(400)
             .margins({top: 10, right: 10, bottom: 50, left: 50})
             .dimension(projectDim)
             .x(d3.scale.ordinal())
@@ -186,6 +198,17 @@
             .yAxisLabel("DRE")
             .xAxisLabel("Projetos")
 
+            //Gráfico de barras com DRE (Qnt de bugs encontrados pelo time de testes/ bugs total)
+            dreReleaseChart
+              .width(1200).height(400)
+              .margins({top: 10, right: 10, bottom: 50, left: 50})
+              .dimension(releaseDim)
+              .x(d3.scale.ordinal())
+              .xUnits(dc.units.ordinal)
+              .barPadding(0.2)
+              .group(dreByReleaseGroup)
+              .yAxisLabel("DRE")
+              .xAxisLabel("Releases")
 
             // Composite chart com a horas estimadas X reais
           compositeHorasReleaseChart
