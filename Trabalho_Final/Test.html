@@ -27,6 +27,11 @@
      <div id="chartDRE_Project"></div>
   </div>
 
+  <div><h1>Horas Estimadas X Horas Reais</h1>
+     <div id="chartHoras_Release"></div>
+  </div>
+
+
   <script type="text/javascript">
         // Chart Bugs por release de um determinado projeto
         var barChartBugs_Projeto = dc.barChart('#chartBugs_Projeto');
@@ -37,6 +42,15 @@
 
         // Gráfico de barras com DRE por projeto
         var dreProjectChart = dc.barChart('#chartDRE_Project');
+
+        // Gráfico de horas estimadas x reais por release
+        var compositeHorasReleaseChart = dc.compositeChart('#chartHoras_Release');
+
+        // Gráfico de horas estimadas
+        //var horasEstimadasReleaseChart = dc.barChart('#chartHoras_Estimadas_Release');
+
+        // Gráfico de horas reais
+        //var horasReaisReleaseChart = dc.barChart('#chartHoras_Reais_Release');
 
         d3.json("Data_Analysis.json", function(error, data) {
 
@@ -70,7 +84,7 @@
 
           //Retorna DRE por projeto
           var dreByProjectGroup = projectDim.group().reduceSum(function(d){
-            return (d.Qnt_Bugs/d.Qnt_Bugs_Client);
+            return ((d.Qnt_Bugs/d.Qnt_Bugs_Client) * 100);
           });
 
           //Retorna qnt de bugs de dev por data da release
@@ -92,6 +106,30 @@
           var tcByReleaseGroup = releaseDim.group().reduceSum(function(d){
             return d.Qnt_TC_Release;
           });
+
+          //Retorna horas estimadas release
+          var horasEstimadaReleaseGroup = releaseDim.group().reduceSum(function(d){
+            return d.Tempo_Estimado;
+          });
+
+          //Retorna horas reais release
+          var horasReaisReleaseGroup = releaseDim.group().reduceSum(function(d){
+            return d.Tempo_Real;
+          });
+
+          // Tentativa de usar o gráfico de barras multiplas com dc
+          var horasEstimadasReleaseChart = dc.barChart(compositeHorasReleaseChart)
+                   .group(horasEstimadaReleaseGroup)
+                   .valueAccessor(function (d) {
+                       return d.Tempo_Estimado;
+                   });
+
+          var horasReaisReleaseChart = dc.barChart(compositeHorasReleaseChart)
+                   .group(horasReaisReleaseGroup)
+                   .valueAccessor(function (d) {
+                       return d.Tempo_Real;
+                   });
+
 
           //Gráfico de barras com Bugs por projeto
           barChartBugs_Projeto
@@ -147,6 +185,46 @@
             .group(dreByProjectGroup)
             .yAxisLabel("DRE")
             .xAxisLabel("Projetos")
+
+
+            // Composite chart com a horas estimadas X reais
+          compositeHorasReleaseChart
+               .width(1200)
+               .height(400)
+               .margins({top: 50, right: 50, bottom: 25, left: 40})
+               .dimension(releaseDim)
+               .x(d3.scale.ordinal())
+               .xUnits(dc.units.ordinal)
+               .renderHorizontalGridLines(true)
+               .legend(dc.legend().x(1000).y(5).itemHeight(13).gap(5))
+               .brushOn(false)
+               .compose([horasEstimadasReleaseChart, horasReaisReleaseChart]);
+
+            //Gráfico de Horas estimadas por release
+/*            horasEstimadasReleaseChart
+              .width(1200).height(400)
+              .margins({top: 10, right: 10, bottom: 50, left: 50})
+              .dimension(releaseDim)
+              .x(d3.scale.ordinal())
+              .xUnits(dc.units.ordinal)
+              .barPadding(0.2)
+              .group(horasEstimadaReleaseGroup)
+              .yAxisLabel("Horas")
+              .xAxisLabel("Release")
+
+            //Gráfico de Horas estimadas por release
+            horasReaisReleaseChart
+              .width(1200).height(400)
+              .margins({top: 10, right: 10, bottom: 50, left: 50})
+              .dimension(releaseDim)
+              .x(d3.scale.ordinal())
+              .xUnits(dc.units.ordinal)
+              .barPadding(0.2)
+              .group(horasReaisReleaseGroup)
+              .yAxisLabel("Horas")
+              .xAxisLabel("Release")
+*/
+
 
 
           dc.renderAll();
