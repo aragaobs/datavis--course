@@ -84,7 +84,7 @@
 
           //Retorna DRE por projeto
           var dreByProjectGroup = projectDim.group().reduceSum(function(d){
-            return ((d.Qnt_Bugs/d.Qnt_Bugs_Client) * 100);
+            return (d.Qnt_Bugs/(d.Qnt_Bugs + d.Qnt_Bugs_Client));
           });
 
           //Retorna qnt de bugs de dev por data da release
