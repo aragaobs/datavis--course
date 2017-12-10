@@ -323,8 +323,8 @@
               .group(tcByReleaseGroup)
               .yAxisLabel("Qnt Casos de Testes")
               .xAxisLabel("Releases")
-              .elasticX(true)
-              .render();
+              .elasticX(true);
+
               //Gráfico de barras com Casos de teste por Release
               barChartBugs_Release
                 .width(700).height(300)
@@ -336,8 +336,8 @@
                 .group(bugsByReleaseGroup)
                 .yAxisLabel("Quantidade de Bugs")
                 .xAxisLabel("Releases")
-                .elasticX(true)
-                .render();
+                .elasticX(true);
+
               //Gráfico de barras com DRE (Qnt de bugs encontrados pelo time de testes/ bugs total)
               dreReleaseChart
                 .width(700).height(300)
@@ -348,8 +348,10 @@
                 .barPadding(0.2)
                 .group(dreByReleaseGroup)
                 .yAxisLabel("DRE")
-                .xAxisLabel("Releases")
-                .render();
+                .xAxisLabel("Releases");
+
+
+                dc.renderAll();
           }
 
 
